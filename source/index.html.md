@@ -430,7 +430,6 @@ return a order list
         "exercised": true,
         "expiry": "string",
         "funding_asset_id": "string",
-        "funding_end_at": "string",
         "hide": true,
         "insurance_enable": true,
         "max_fund": "string",
@@ -880,7 +879,6 @@ return a order
       "exercised": true,
       "expiry": "string",
       "funding_asset_id": "string",
-      "funding_end_at": "string",
       "hide": true,
       "insurance_enable": true,
       "max_fund": "string",
@@ -1103,7 +1101,6 @@ Get a round list
         "exercised": true,
         "expiry": "string",
         "funding_asset_id": "string",
-        "funding_end_at": "string",
         "hide": true,
         "insurance_enable": true,
         "max_fund": "string",
@@ -1255,7 +1252,6 @@ Get a round list
       "exercised": true,
       "expiry": "string",
       "funding_asset_id": "string",
-      "funding_end_at": "string",
       "hide": true,
       "insurance_enable": true,
       "max_fund": "string",
@@ -1364,7 +1360,6 @@ Get a round list
         "exercised": true,
         "expiry": "string",
         "funding_asset_id": "string",
-        "funding_end_at": "string",
         "hide": true,
         "insurance_enable": true,
         "max_fund": "string",
@@ -1432,7 +1427,6 @@ Get a round list
         "exercised": true,
         "expiry": "string",
         "funding_asset_id": "string",
-        "funding_end_at": "string",
         "hide": true,
         "insurance_enable": true,
         "max_fund": "string",
@@ -1508,7 +1502,6 @@ Get a round list
     "exercised": true,
     "expiry": "string",
     "funding_asset_id": "string",
-    "funding_end_at": "string",
     "hide": true,
     "insurance_enable": true,
     "max_fund": "string",
@@ -1670,7 +1663,6 @@ Get a round list
   "exercised": true,
   "expiry": "string",
   "funding_asset_id": "string",
-  "funding_end_at": "string",
   "hide": true,
   "insurance_enable": true,
   "max_fund": "string",
@@ -1696,7 +1688,6 @@ Get a round list
 |exercised|boolean|false|none|行权状态|
 |expiry|string|false|none|(C端显示)到期时间|
 |funding_asset_id|string|false|none|募资货币：USDT or BTC or ETH|
-|funding_end_at|string|false|none|FundingStartAt  string `json:"funding_start_at"`  //使用created_at作为募资开始时间|
 |hide|boolean|false|none|可见状态(是否隐藏该round)|
 |insurance_enable|boolean|false|none|是否开启保险赔付|
 |max_fund|string|false|none|最高募资金额|
@@ -1761,7 +1752,6 @@ Get a round list
     "exercised": true,
     "expiry": "string",
     "funding_asset_id": "string",
-    "funding_end_at": "string",
     "hide": true,
     "insurance_enable": true,
     "max_fund": "string",
