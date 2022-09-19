@@ -27,7 +27,7 @@ Welcome to the Yield Dance API! You can use our API to access Yield Dance API en
 
 Base URLs:
 
-* <a href="https://mixin-api.yield.dance/api/v2">https://mixin-api.yield.dance/api/v2</a>
+* <a href="https://xin-test.yield.dance/api/v2">https://xin-test.yield.dance/api/v2</a>
 
 <h1 id="yield-dance-api-authorization">Authorization</h1>
 
@@ -37,15 +37,15 @@ Base URLs:
 
 ```shell
 # You can also use wget
-curl -X POST https://mixin-api.yield.dance/api/v2/auth \
+curl -X POST https://xin-test.yield.dance/api/v2/auth \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-POST https://mixin-api.yield.dance/api/v2/auth HTTP/1.1
-Host: mixin-api.yield.dance
+POST https://xin-test.yield.dance/api/v2/auth HTTP/1.1
+Host: xin-test.yield.dance
 Content-Type: application/json
 Accept: application/json
 
@@ -60,7 +60,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://mixin-api.yield.dance/api/v2/auth',
+fetch('https://xin-test.yield.dance/api/v2/auth',
 {
   method: 'POST',
   body: inputBody,
@@ -83,7 +83,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.post 'https://mixin-api.yield.dance/api/v2/auth',
+result = RestClient.post 'https://xin-test.yield.dance/api/v2/auth',
   params: {
   }, headers: headers
 
@@ -98,7 +98,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.post('https://mixin-api.yield.dance/api/v2/auth', headers = headers)
+r = requests.post('https://xin-test.yield.dance/api/v2/auth', headers = headers)
 
 print(r.json())
 
@@ -120,7 +120,7 @@ $client = new \GuzzleHttp\Client();
 $request_body = array();
 
 try {
-    $response = $client->request('POST','https://mixin-api.yield.dance/api/v2/auth', array(
+    $response = $client->request('POST','https://xin-test.yield.dance/api/v2/auth', array(
         'headers' => $headers,
         'json' => $request_body,
        )
@@ -137,7 +137,7 @@ try {
 ```
 
 ```java
-URL obj = new URL("https://mixin-api.yield.dance/api/v2/auth");
+URL obj = new URL("https://xin-test.yield.dance/api/v2/auth");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -169,7 +169,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "https://mixin-api.yield.dance/api/v2/auth", data)
+    req, err := http.NewRequest("POST", "https://xin-test.yield.dance/api/v2/auth", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -226,15 +226,15 @@ Auth with Yield Dance. You must OAuth with mixin firstly to obtain the mixin tok
 
 ```shell
 # You can also use wget
-curl -X GET https://mixin-api.yield.dance/api/v2/orders \
+curl -X GET https://xin-test.yield.dance/api/v2/orders \
   -H 'Accept: application/json' \
   -H 'Authorization: string'
 
 ```
 
 ```http
-GET https://mixin-api.yield.dance/api/v2/orders HTTP/1.1
-Host: mixin-api.yield.dance
+GET https://xin-test.yield.dance/api/v2/orders HTTP/1.1
+Host: xin-test.yield.dance
 Accept: application/json
 Authorization: string
 
@@ -247,7 +247,7 @@ const headers = {
   'Authorization':'string'
 };
 
-fetch('https://mixin-api.yield.dance/api/v2/orders',
+fetch('https://xin-test.yield.dance/api/v2/orders',
 {
   method: 'GET',
 
@@ -270,7 +270,7 @@ headers = {
   'Authorization' => 'string'
 }
 
-result = RestClient.get 'https://mixin-api.yield.dance/api/v2/orders',
+result = RestClient.get 'https://xin-test.yield.dance/api/v2/orders',
   params: {
   }, headers: headers
 
@@ -285,7 +285,7 @@ headers = {
   'Authorization': 'string'
 }
 
-r = requests.get('https://mixin-api.yield.dance/api/v2/orders', headers = headers)
+r = requests.get('https://xin-test.yield.dance/api/v2/orders', headers = headers)
 
 print(r.json())
 
@@ -307,7 +307,7 @@ $client = new \GuzzleHttp\Client();
 $request_body = array();
 
 try {
-    $response = $client->request('GET','https://mixin-api.yield.dance/api/v2/orders', array(
+    $response = $client->request('GET','https://xin-test.yield.dance/api/v2/orders', array(
         'headers' => $headers,
         'json' => $request_body,
        )
@@ -324,7 +324,7 @@ try {
 ```
 
 ```java
-URL obj = new URL("https://mixin-api.yield.dance/api/v2/orders");
+URL obj = new URL("https://xin-test.yield.dance/api/v2/orders");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -356,7 +356,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://mixin-api.yield.dance/api/v2/orders", data)
+    req, err := http.NewRequest("GET", "https://xin-test.yield.dance/api/v2/orders", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -471,7 +471,7 @@ return a order list
 
 ```shell
 # You can also use wget
-curl -X POST https://mixin-api.yield.dance/api/v2/orders \
+curl -X POST https://xin-test.yield.dance/api/v2/orders \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Authorization: string'
@@ -479,8 +479,8 @@ curl -X POST https://mixin-api.yield.dance/api/v2/orders \
 ```
 
 ```http
-POST https://mixin-api.yield.dance/api/v2/orders HTTP/1.1
-Host: mixin-api.yield.dance
+POST https://xin-test.yield.dance/api/v2/orders HTTP/1.1
+Host: xin-test.yield.dance
 Content-Type: application/json
 Accept: application/json
 Authorization: string
@@ -502,7 +502,7 @@ const headers = {
   'Authorization':'string'
 };
 
-fetch('https://mixin-api.yield.dance/api/v2/orders',
+fetch('https://xin-test.yield.dance/api/v2/orders',
 {
   method: 'POST',
   body: inputBody,
@@ -526,7 +526,7 @@ headers = {
   'Authorization' => 'string'
 }
 
-result = RestClient.post 'https://mixin-api.yield.dance/api/v2/orders',
+result = RestClient.post 'https://xin-test.yield.dance/api/v2/orders',
   params: {
   }, headers: headers
 
@@ -542,7 +542,7 @@ headers = {
   'Authorization': 'string'
 }
 
-r = requests.post('https://mixin-api.yield.dance/api/v2/orders', headers = headers)
+r = requests.post('https://xin-test.yield.dance/api/v2/orders', headers = headers)
 
 print(r.json())
 
@@ -565,7 +565,7 @@ $client = new \GuzzleHttp\Client();
 $request_body = array();
 
 try {
-    $response = $client->request('POST','https://mixin-api.yield.dance/api/v2/orders', array(
+    $response = $client->request('POST','https://xin-test.yield.dance/api/v2/orders', array(
         'headers' => $headers,
         'json' => $request_body,
        )
@@ -582,7 +582,7 @@ try {
 ```
 
 ```java
-URL obj = new URL("https://mixin-api.yield.dance/api/v2/orders");
+URL obj = new URL("https://xin-test.yield.dance/api/v2/orders");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -615,7 +615,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "https://mixin-api.yield.dance/api/v2/orders", data)
+    req, err := http.NewRequest("POST", "https://xin-test.yield.dance/api/v2/orders", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -685,15 +685,15 @@ submit a order to round
 
 ```shell
 # You can also use wget
-curl -X GET https://mixin-api.yield.dance/api/v2/orders/{oid} \
+curl -X GET https://xin-test.yield.dance/api/v2/orders/{oid} \
   -H 'Accept: application/json' \
   -H 'Authorization: string'
 
 ```
 
 ```http
-GET https://mixin-api.yield.dance/api/v2/orders/{oid} HTTP/1.1
-Host: mixin-api.yield.dance
+GET https://xin-test.yield.dance/api/v2/orders/{oid} HTTP/1.1
+Host: xin-test.yield.dance
 Accept: application/json
 Authorization: string
 
@@ -706,7 +706,7 @@ const headers = {
   'Authorization':'string'
 };
 
-fetch('https://mixin-api.yield.dance/api/v2/orders/{oid}',
+fetch('https://xin-test.yield.dance/api/v2/orders/{oid}',
 {
   method: 'GET',
 
@@ -729,7 +729,7 @@ headers = {
   'Authorization' => 'string'
 }
 
-result = RestClient.get 'https://mixin-api.yield.dance/api/v2/orders/{oid}',
+result = RestClient.get 'https://xin-test.yield.dance/api/v2/orders/{oid}',
   params: {
   }, headers: headers
 
@@ -744,7 +744,7 @@ headers = {
   'Authorization': 'string'
 }
 
-r = requests.get('https://mixin-api.yield.dance/api/v2/orders/{oid}', headers = headers)
+r = requests.get('https://xin-test.yield.dance/api/v2/orders/{oid}', headers = headers)
 
 print(r.json())
 
@@ -766,7 +766,7 @@ $client = new \GuzzleHttp\Client();
 $request_body = array();
 
 try {
-    $response = $client->request('GET','https://mixin-api.yield.dance/api/v2/orders/{oid}', array(
+    $response = $client->request('GET','https://xin-test.yield.dance/api/v2/orders/{oid}', array(
         'headers' => $headers,
         'json' => $request_body,
        )
@@ -783,7 +783,7 @@ try {
 ```
 
 ```java
-URL obj = new URL("https://mixin-api.yield.dance/api/v2/orders/{oid}");
+URL obj = new URL("https://xin-test.yield.dance/api/v2/orders/{oid}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -815,7 +815,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://mixin-api.yield.dance/api/v2/orders/{oid}", data)
+    req, err := http.NewRequest("GET", "https://xin-test.yield.dance/api/v2/orders/{oid}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -916,15 +916,15 @@ return a order
 
 ```shell
 # You can also use wget
-curl -X GET https://mixin-api.yield.dance/api/v2/rounds \
+curl -X GET https://xin-test.yield.dance/api/v2/rounds \
   -H 'Accept: application/json' \
   -H 'Authorization: string'
 
 ```
 
 ```http
-GET https://mixin-api.yield.dance/api/v2/rounds HTTP/1.1
-Host: mixin-api.yield.dance
+GET https://xin-test.yield.dance/api/v2/rounds HTTP/1.1
+Host: xin-test.yield.dance
 Accept: application/json
 Authorization: string
 
@@ -937,7 +937,7 @@ const headers = {
   'Authorization':'string'
 };
 
-fetch('https://mixin-api.yield.dance/api/v2/rounds',
+fetch('https://xin-test.yield.dance/api/v2/rounds',
 {
   method: 'GET',
 
@@ -960,7 +960,7 @@ headers = {
   'Authorization' => 'string'
 }
 
-result = RestClient.get 'https://mixin-api.yield.dance/api/v2/rounds',
+result = RestClient.get 'https://xin-test.yield.dance/api/v2/rounds',
   params: {
   }, headers: headers
 
@@ -975,7 +975,7 @@ headers = {
   'Authorization': 'string'
 }
 
-r = requests.get('https://mixin-api.yield.dance/api/v2/rounds', headers = headers)
+r = requests.get('https://xin-test.yield.dance/api/v2/rounds', headers = headers)
 
 print(r.json())
 
@@ -997,7 +997,7 @@ $client = new \GuzzleHttp\Client();
 $request_body = array();
 
 try {
-    $response = $client->request('GET','https://mixin-api.yield.dance/api/v2/rounds', array(
+    $response = $client->request('GET','https://xin-test.yield.dance/api/v2/rounds', array(
         'headers' => $headers,
         'json' => $request_body,
        )
@@ -1014,7 +1014,7 @@ try {
 ```
 
 ```java
-URL obj = new URL("https://mixin-api.yield.dance/api/v2/rounds");
+URL obj = new URL("https://xin-test.yield.dance/api/v2/rounds");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1046,7 +1046,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://mixin-api.yield.dance/api/v2/rounds", data)
+    req, err := http.NewRequest("GET", "https://xin-test.yield.dance/api/v2/rounds", data)
     req.Header = headers
 
     client := &http.Client{}
